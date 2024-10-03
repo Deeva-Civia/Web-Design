@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab Exercise 2 - Form</title>
+</head>
+<body>
+    <h1>SURAT PERMOHONAN TAMAT</h1>
+    <form action="">
+        <table>
+            <tr>
+                <td><label for="nama">Nama (Sesuai Ijazah)</label></td>
+                <td>:</td>
+                <td><input type="text" name="nama" id="nama"></td>
+            </tr>
+            <tr>
+                <td><label for="nomorTel">Nomor Telepon/HP</label></td>
+                <td>:</td>
+                <td><input type="number" name="nomorTel" id="nomorTel"></td>
+            </tr>
+            <tr>
+                <td><label for="email">Email</label></td>
+                <td>:</td>
+                <td><input type="email" name="email" id="email"></td>
+            </tr>
+            <tr>
+                <td><label for="gender">Jenis Kelamin</label></td>
+                <td>:</td>
+                <td>
+                    <input type="radio" name="gender" id="gender" value="Laki-Laki">Laki-Laki
+                    <input type="radio" name="gender" id="gender" value="Perempuan">Perempuan
+                </td>
+            </tr>
+            <tr>
+                <td><label for="nim">Nomor Induk Mahasiswa</label></td>
+                <td>:</td>
+                <td><input type="text" name="nim" id="nim"></td>
+            </tr>
+            <tr>
+                <td><label for="nik">Nomor Induk Kependudukan</label></td>
+                <td>:</td>
+                <td><input type="text" name="nik" id="nik"></td>
+            </tr>
+            <tr>
+                <td><label for="fakultas">Fakultas</label></td>
+                <td>:</td>
+                <td>
+                    <select name="fakultas" id="fakultas">
+                        <option value="">-- Pilih Fakultas --</option>
+                        <option value="ASMI">ASMI Klabat</option>
+                        <option value="Fekon">Fakultas Ekonomi dan Bisnis</option>
+                        <option value="Filsafat">Fakultas Filsafat</option>
+                        <option value="Filkom">Fakultas Ilmu Komputer</option>
+                        <option value="FKIP">Fakultas Keguruan dan Ilmu Pendidikan</option>
+                        <option value="FKEP">Fakultas Keperawatan</option>
+                        <option value="FPER">Fakultas Pertanian</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="prodi">Program Studi</label></td>
+                <td>:</td>
+                <td>
+                    <select name="prodi" id="prodi">
+                        <option value="">-- Pilih Prodi --</option>
+                        <option value="Argoteknologi">Argoteknologi</option>
+                        <option value="Akuntansi">Akuntansi</option>
+                        <option value="Ilmu Filsafat">Ilmu Filsafat</option>
+                        <option value="Ilmu Keperawatan">Ilmu Keperawatan</option>
+                        <option value="IF">Informatika</option>
+                        <option value="MM">Magister Manajemen</option>
+                        <option value="MT">Magister Teologi</option>
+                        <option value="Manajemen">Manajemen</option>
+                        <option value="PA">Pendidikan Agama</option>
+                        <option value="PB">Pendidikan Bahasa Inggris</option>
+                        <option value="PE">Pendidikan Ekonomi</option>
+                        <option value="PLS">Pendidikan Luar Sekolah</option>
+                        <option value="PN">Profesi Ners</option>
+                        <option value="Sekretaris">Sekretaris</option>
+                        <option value="SI">Sistem Informasi</option>
+                        <option value="TI">Teknologi Informasi</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="minor">Minor</label></td>
+                <td>:</td>
+                <td><input type="text" name="minor" id="minor"></td>
+            </tr>
+            <tr>
+                <td><label for="thnAjaran">Tahun Ajaran</label></td>
+                <td>:</td>
+                <td><input type="radio" name="thnAjaran" id="thnAjaran" value="Tahun Akademik 2024/2025">Tahun Akademik 2024/2025</td>
+            </tr>
+            <tr>
+                <td><label for="tglPenamatan">Tanggal Penamatan</label></td>
+                <td>:</td>
+                <td><input type="date" name="tglPenamatan" id="tglPenamatan"></td>
+            </tr>
+        </table>
+    </form>
+    <br>
+    <h3>SISA MATA KULIAH YANG HARUS DIAMBIL</h3>
+    <table>
+        <tr>
+            <th>No</th>
+            <th><label for="matkul">Mata Kuliah</label></th>
+            <th><label for="kredit">Kredit</label></th>
+            <th><label for="dosen">Nama Dosen Mengajar</label></th>
+            <th><label for="paralel">Paralel</label></th>
+            <th><label for="keterangan">Keterangan</label></th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td><input type="text" name="matkul" id="matkul"></td>
+            <td><input type="text" name="kredit" id="kredit" size="3"></td>
+            <td><input type="text" name="dosen" id="dosen"></td>
+            <td><input type="text" name="paralel" id="paralel" size="3"></td>
+            <td><input type="text" name="keterangan" id="keterangan" ></td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td><input type="text" name="matkul" id="matkul"></td>
+            <td><input type="text" name="kredit" id="kredit" size="3"></td>
+            <td><input type="text" name="dosen" id="dosen"></td>
+            <td><input type="text" name="paralel" id="paralel" size="3"></td>
+            <td><input type="text" name="keterangan" id="keterangan" ></td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td><input type="text" name="matkul" id="matkul"></td>
+            <td><input type="text" name="kredit" id="kredit" size="3"></td>
+            <td><input type="text" name="dosen" id="dosen"></td>
+            <td><input type="text" name="paralel" id="paralel" size="3"></td>
+            <td><input type="text" name="keterangan" id="keterangan" ></td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td><input type="text" name="matkul" id="matkul"></td>
+            <td><input type="text" name="kredit" id="kredit" size="3"></td>
+            <td><input type="text" name="dosen" id="dosen"></td>
+            <td><input type="text" name="paralel" id="paralel" size="3"></td>
+            <td><input type="text" name="keterangan" id="keterangan" ></td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td><input type="text" name="matkul" id="matkul"></td>
+            <td><input type="text" name="kredit" id="kredit" size="3"></td>
+            <td><input type="text" name="dosen" id="dosen"></td>
+            <td><input type="text" name="paralel" id="paralel" size="3"></td>
+            <td><input type="text" name="keterangan" id="keterangan" ></td>
+        </tr>
+        <tr>
+            <th colspan="2"><label for="sks">Jumlah SKS</label></th>
+            <td><input type="text" name="sks" id="sks" size="3"></td>
+        </tr>
+    </table>
+    <br>
+    <i>Disetujui oleh:</i>
+    <br>
+    <table border="1" style="width: 50%;">
+        <br>
+        <tr>
+            <th>DEKAN</th>
+            <th>KETUA PRODI</th>
+            <th>KETUA MINOR</th>
+            <th>REGISTRAR</th>
+        </tr>
+        <tr>
+            <td>&nbsp; <br> &nbsp;</td>
+            <td>&nbsp; <br> &nbsp;</td>
+            <td>&nbsp; <br> &nbsp;</td>
+            <td>&nbsp; <br> &nbsp;</td>
+        </tr>
+    </table>
+    <ol>
+        <li>Permohonan ini harus diisi pada permulaan semester untuk ditamatkan (hari pertama kuliah).</li>
+        <li>Mata kuliah yang dituliskan pada permohonan ini adalah sesuai dengan semua sisa mata kuliah yang harus diambil temasuk incomplete dan subjek perbaikan.</li>
+        <li>Surat Pemohonan Tamat ini harus ditanda tangani oleh Dekan, Ketua Prodi, dan Ketua Minor masing-masing fakultas dengan <strong><i>melampirkan jadwal mata kuliah yang dikontrak pada semester berjalan.</i></strong></li>
+        <li>SPT ini dianggap selesai (Sah) apabila sudah dimasukkan di kantor Registrar</li>
+        <li>Batas pemasukan SPT satu minggu sesudah Add & Drop mata kuliah</li>
+    </ol>
+    <i>Juga melampirkan Surat/Sertifikat dibawah ini:</i>
+    <br>
+    <br>
+    <table border="1" style="width: 40%;">
+        <tr>
+            <th>Fak. Filsafat</th>
+            <th>Fak. Ilmu Komputer</th>
+            <th>Fak. Keguruan dan Ilmu Pendidikan</th>
+            <th>ASMIK</th>
+        </tr>
+        <tr>
+            <td>Surat Menjual Buku</td>
+            <td>Sertifikat Oracle & Cisco</td>
+            <td>Ujian Comperhensive bagi yang tidak mengambil Skripsi</td>
+            <td>Sertifikat Seminar & Table Manner (minimal 5)</td>
+        </tr>
+    </table>
+    <br>
+    <label for="sertifikat">Upload Surat/Sertifikat:</label>
+    <input type="file" name="sertifikat" id="sertifikat">
+    <br>
+    <br>
+    <input type="checkbox" name="pernyataan" id="pernyataan" value="Lengkap-Benar">Dengan ini saya menyatakan bahwa semua informasi pada Surat Permohonan Tamat ini adalah lengkap dan benar.
+    <br>
+    <br>
+    <label for="tempat-tanggal">Airmadidi</label>
+    <input type="date" name="tempat-tanggal" id="tempat-tanggal">
+    <table>
+        <tr>
+            <td>Yang Bermohon,</td>
+        </tr>
+        <tr>
+            <td>&nbsp; <br> &nbsp;</td>
+        </tr>
+        <tr>
+            <td><u>(Nama Lengkap Mahasiswa)</u></td>
+        </tr>
+    </table>
+</body>
+</html>
