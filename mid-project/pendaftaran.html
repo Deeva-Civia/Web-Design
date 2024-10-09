@@ -22,20 +22,19 @@
     <main>
         <h1>UNKLAB Registration Form for New Student</h1>
         <form id="registrationForm">
-            <label for="regisNumber">Registration Number:</label>
-            <input type="text" name="regisNumber" id="regisNumber" size="1">
-            <input type="text" name="regisNumber" id="regisNumber" size="1">
-            <input type="text" name="regisNumber" id="regisNumber" size="1">
-            <input type="text" name="regisNumber" id="regisNumber" size="1">
-            <input type="text" name="regisNumber" id="regisNumber" size="1">
-            <input type="text" name="regisNumber" id="regisNumber" size="1">
-            <input type="text" name="regisNumber" id="regisNumber" size="1">
-            <input type="text" name="regisNumber" id="regisNumber" size="1">
-            <br>
-            <br>
+            <label for="regisNumber1">Registration Number:</label>
+            <input type="text" name="regisNumber[]" id="regisNumber1" size="1" maxlength="1">
+            <input type="text" name="regisNumber[]" id="regisNumber2" size="1" maxlength="1">
+            <input type="text" name="regisNumber[]" id="regisNumber3" size="1" maxlength="1">
+            <input type="text" name="regisNumber[]" id="regisNumber4" size="1" maxlength="1">
+            <input type="text" name="regisNumber[]" id="regisNumber5" size="1" maxlength="1">
+            <input type="text" name="regisNumber[]" id="regisNumber6" size="1" maxlength="1">
+            <input type="text" name="regisNumber[]" id="regisNumber7" size="1" maxlength="1">
+            <input type="text" name="regisNumber[]" id="regisNumber8" size="1" maxlength="1">
+            <br><br>
 
             <fieldset>
-                <legend>Pesonal Information</legend>
+                <legend>Personal Information</legend>
                 <table>
                     <tr>
                         <td><label for="fullName">Full Name</label></td>
@@ -51,19 +50,25 @@
                         <td><input type="date" name="dateOfBirth" id="dateOfBirth"></td>
                     </tr>
                     <tr>
-                        <td><label for="gender">Gender</label></td>
+                        <td>Gender</td>
                         <td>:</td>
                         <td>
-                            <input type="radio" name="gender" id="gender" value="Male">Male
-                            <input type="radio" name="gender" id="gender" value="Female">Female
+                            <input type="radio" name="gender" id="genderMale" value="Male">
+                            <label for="genderMale">Male</label>
+                            <input type="radio" name="gender" id="genderFemale" value="Female">
+                            <label for="genderFemale">Female</label>
                         </td>
-                        <td><label for="blood">Blood Type</label></td>
+                        <td>Blood Type</td>
                         <td>:</td>
                         <td>
-                            <input type="radio" name="blood" id="blood" value="A">A
-                            <input type="radio" name="blood" id="blood" value="B">B
-                            <input type="radio" name="blood" id="blood" value="AB">AB
-                            <input type="radio" name="blood" id="blood" value="O">O
+                            <input type="radio" name="blood" id="bloodA" value="A">
+                            <label for="bloodA">A</label>
+                            <input type="radio" name="blood" id="bloodB" value="B">
+                            <label for="bloodB">B</label>
+                            <input type="radio" name="blood" id="bloodAB" value="AB">
+                            <label for="bloodAB">AB</label>
+                            <input type="radio" name="blood" id="bloodO" value="O">
+                            <label for="bloodO">O</label>
                         </td>
                     </tr>
                     <tr>
@@ -111,12 +116,13 @@
                     </tr>
                     <tr>
                         <td><label for="address">Home Address</label></td>
-                        <td colspan="5"><textarea name="address" id="address" cols="30" rows="10"></textarea></td>
+                        <td>:</td>
+                        <td colspan="4"><textarea name="address" id="address" cols="30" rows="10"></textarea></td>
                     </tr>
                     <tr>
                         <td><label for="postCode-personal">Postal Code</label></td>
                         <td>:</td>
-                        <td><input type="text" name="postCode-personal" id="postCode-personal"></td>
+                        <td colspan="4"><input type="text" name="postCode-personal" id="postCode-personal"></td>
                     </tr>
                 </table>
             </fieldset>
@@ -128,24 +134,25 @@
                     <tr>
                         <td><label for="schoolName">High school's Name</label></td>
                         <td>:</td>
-                        <td colspan="4"><input type="text" name="schoolName" id="schoolName" size="63"></td>
+                        <td colspan="4"><input type="text" name="schoolName" id="schoolName" size="66"></td>
                     </tr>
                     <tr>
                         <td><label for="program">Program</label></td>
                         <td>:</td>
                         <td><input type="text" name="program" id="program"></td>
-                        <td><label for="schoolTel">Telepon Number</label></td>
+                        <td><label for="schoolTel">Telephone Number</label></td>
                         <td>:</td>
                         <td><input type="number" name="schoolTel" id="schoolTel"></td>
                     </tr>
                     <tr>
                         <td><label for="schoolAddress">School's Address</label></td>
-                        <td colspan="5"><textarea name="schoolAddress" id="schoolAddress" cols="30" rows="10"></textarea></td>
+                        <td>:</td>
+                        <td colspan="4"><textarea name="schoolAddress" id="schoolAddress" cols="30" rows="10"></textarea></td>
                     </tr>
                     <tr>
                         <td><label for="postCode-school">Postal Code</label></td>
                         <td>:</td>
-                        <td><input type="text" name="postCode-school" id="postCode-school"></td>
+                        <td colspan="4"><input type="text" name="postCode-school" id="postCode-school"></td>
                     </tr>
                 </table>
             </fieldset>
@@ -267,21 +274,19 @@
                     </tr>
                 </table>
             </fieldset>
-            <br>
-            <input type="checkbox" name="agreement" id="agreement">I hereby state that all information on this New Student Registration From are complete and true.<br />All content on this form I submitted to Universitas Klabat and Universitas Klabat are not oblidge to return it.
-            <br>
-            <br>
+            <br><br>
+            <input type="checkbox" name="agreement" id="agreement">
+            <label for="agreement">I hereby state that all information on this New Student Registration Form is complete and true.<br>All content on this form I submitted to Universitas Klabat and Universitas Klabat is not obliged to return it.</label>
+            <br><br>
             <label for="tempat-tanggal">Airmadidi</label>
             <input type="date" name="tempat-tanggal" id="tempat-tanggal">
-            <br>
-            <br>
-            <input type="reset" value="Reset Form" id="form-pendaftan">
-            <input type="submit" value="Register" id="form-pendaftan">
+            <br><br>
+            <input type="reset" value="Reset Form" id="resetForm">
+            <input type="submit" value="Register" id="submitForm">
         </form>
         <br>
         <hr>
     </main>
-
 
     <footer>
         <p>Copyright WebDesign Course UNKLAB  &copy; 2022</p>
